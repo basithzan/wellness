@@ -332,9 +332,10 @@ a {
   z-index: 1;
 }
 
-/* ===================== Hero headline word animation (prevent bottom clip) ===================== */
+/* ===================== Hero headline word animation (prevent bottom clip, no extra line gap) ===================== */
 #home .word-wrapper {
   padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
   vertical-align: bottom;
 }
 
