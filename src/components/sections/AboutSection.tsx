@@ -1,5 +1,6 @@
 'use client';
 
+import { useBooking } from '@/components/BookingProvider';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
@@ -46,6 +47,7 @@ function StatItem({ stat, trigger }: { stat: typeof stats[0]; trigger: boolean }
 }
 
 export default function AboutSection() {
+    const { openBooking } = useBooking();
     const sectionRef = useRef<HTMLElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
     const imgRef = useRef<HTMLDivElement>(null);
@@ -157,7 +159,7 @@ export default function AboutSection() {
                         </p>
 
                         <button
-                            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={openBooking}
                             className="about-line btn-primary"
                         >
                             <span>Book a Consultation</span>

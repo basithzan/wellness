@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Menu } from 'lucide-react';
+import { useBooking } from '@/components/BookingProvider';
 
 const navLinks = [
     { label: 'Home', href: '#home' },
@@ -17,6 +18,7 @@ const navLinks = [
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const { openBooking } = useBooking();
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 60);
@@ -52,9 +54,9 @@ export default function Navbar() {
                             <Image
                                 src="/zenora-logo-3.png"
                                 alt="Zenora Wellness"
-                                width={160}
-                                height={80}
-                                className="h-10 w-auto object-contain"
+                                width={200}
+                                height={100}
+                                className="h-14 w-auto object-contain"
                                 priority
                             />
                         </Link>
@@ -75,7 +77,7 @@ export default function Navbar() {
                         {/* CTA */}
                         <div className="hidden lg:flex items-center shrink-0 gap-4">
                             <button
-                                onClick={() => handleNavClick('#contact')}
+                                onClick={() => { setMenuOpen(false); openBooking(); }}
                                 className="btn-primary rounded-none"
                             >
                                 <span>Book a Consultation</span>
@@ -120,9 +122,9 @@ export default function Navbar() {
                             <Image
                                 src="/zenora-logo-3.png"
                                 alt="Zenora Wellness"
-                                width={160}
-                                height={80}
-                                className="h-10 w-auto object-contain"
+                                width={200}
+                                height={100}
+                                className="h-14 w-auto object-contain"
                             />
                         </div>
 
@@ -149,7 +151,7 @@ export default function Navbar() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
-                                onClick={() => handleNavClick('#contact')}
+                                onClick={() => { setMenuOpen(false); openBooking(); }}
                                 className="btn-primary w-full rounded-none"
                             >
                                 <span>Book a Consultation</span>

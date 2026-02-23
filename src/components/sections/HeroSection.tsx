@@ -5,8 +5,10 @@ import { motion } from 'framer-motion';
 import { ChevronDown, ArrowRight, CalendarCheck } from 'lucide-react';
 import Image from 'next/image';
 import gsap from 'gsap';
+import { useBooking } from '@/components/BookingProvider';
 
 export default function HeroSection() {
+    const { openBooking } = useBooking();
     const headlineRef = useRef<HTMLHeadingElement>(null);
     const subRef = useRef<HTMLParagraphElement>(null);
     const ctaRef = useRef<HTMLDivElement>(null);
@@ -156,7 +158,7 @@ export default function HeroSection() {
                     <div ref={ctaRef} className="flex flex-col gap-4">
                         <div className="flex flex-wrap gap-4">
                             <button
-                                onClick={() => handleScroll('#contact')}
+                                onClick={openBooking}
                                 className="btn-primary inline-flex items-center gap-2 px-6 py-3.5 text-base font-medium"
                             >
                                 <CalendarCheck size={20} strokeWidth={1.5} />

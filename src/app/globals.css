@@ -332,6 +332,12 @@ a {
   z-index: 1;
 }
 
+/* ===================== Hero headline word animation (prevent bottom clip) ===================== */
+#home .word-wrapper {
+  padding-bottom: 0.15em;
+  vertical-align: bottom;
+}
+
 /* ===================== Nav Link Underline (hover only) ===================== */
 .nav-link {
   position: relative;

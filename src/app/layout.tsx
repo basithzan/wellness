@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import CustomCursor from '@/components/ui/CustomCursor';
 import ScrollProgressBar from '@/components/ui/ScrollProgressBar';
 import SmoothScrollProvider from '@/components/ui/SmoothScrollProvider';
+import { BookingProvider } from '@/components/BookingProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zenorawellness.com'),
@@ -86,13 +87,15 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        <SmoothScrollProvider>
-          <CustomCursor />
-          <ScrollProgressBar />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScrollProvider>
+        <BookingProvider>
+          <SmoothScrollProvider>
+            <CustomCursor />
+            <ScrollProgressBar />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScrollProvider>
+        </BookingProvider>
       </body>
     </html>
   );

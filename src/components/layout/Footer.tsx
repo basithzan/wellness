@@ -37,9 +37,9 @@ export default function Footer() {
                             <Image
                                 src="/zenora-logo-3.png"
                                 alt="Zenora Wellness"
-                                width={160}
-                                height={80}
-                                className="h-10 w-auto object-contain"
+                                width={200}
+                                height={100}
+                                className="h-14 w-auto object-contain"
                             />
                         </Link>
                         <p className="text-white/50 text-sm leading-relaxed max-w-xs">
