@@ -6,9 +6,10 @@ import Image from 'next/image';
 import gsap from 'gsap';
 
 const stats = [
+    { num: 10, suffix: '+', label: 'Years of Excellence' },
     { num: 500, suffix: '+', label: 'Executives Served' },
     { num: 50, suffix: '+', label: 'Corporate Partners' },
-    { num: 98, suffix: '%', label: 'Client Satisfaction' },
+    { num: 98, suffix: '%', label: 'Experience Excellence' },
 ];
 
 function useCountUp(end: number, duration = 2, trigger: boolean) {
@@ -139,23 +140,18 @@ export default function AboutSection() {
                             }}
                         >
                             Where{' '}
-                            <em style={{ fontStyle: 'italic', color: '#C9A96E' }}>Executive Excellence</em>{' '}
-                            Meets Holistic Health
+                            <em style={{ fontStyle: 'italic', color: '#C9A96E' }}>Leadership Performance</em>{' '}
+                            Meets Strategic Health
                         </h2>
 
                         <p className="about-line text-[#4B5563] leading-relaxed mb-5 text-[0.95rem]">
-                            At <strong className="text-[#0A2E1C]">Zenora Wellness FZE</strong>, we exist at the intersection of clinical science and corporate leadership. Founded in the UAE, we understand the unique demands placed on executives operating in one of the world&apos;s most dynamic business environments.
-                        </p>
-
-                        <p className="about-line text-[#4B5563] leading-relaxed mb-5 text-[0.95rem]">
-                            Our team of{' '}
-                            <span className="text-[#0A2E1C] font-medium border-b border-[#C9A96E]/60">specialist clinicians, wellness strategists, and performance coaches</span>{' '}
-                            brings together decades of experience across preventive medicine, occupational health, sports science, and organizational psychology.
+                            At <strong className="text-[#0A2E1C]">Zenora Wellness</strong>, we support leaders and organizations across the globe with personalized wellness strategies built on science, insight, and performance thinking.
                         </p>
 
                         <p className="about-line text-[#4B5563] leading-relaxed mb-10 text-[0.95rem]">
-                            We don&apos;t offer generic wellness packages. Every program is evidence-based, deeply personalized, and built around the reality of a demanding professional life — because we believe that{' '}
-                            <span className="text-[#0A2E1C] font-medium border-b border-[#C9A96E]/60">your greatest asset is you</span>.
+                            We do not deliver generic programs. Every engagement is{' '}
+                            <span className="text-[#0A2E1C] font-medium border-b border-[#C9A96E]/60">tailored to individual and organizational needs</span>{' '}
+                            — designed to elevate performance while protecting long-term health.
                         </p>
 
                         <button
@@ -188,14 +184,14 @@ export default function AboutSection() {
                             >
                                 10+
                             </div>
-                            <div className="text-white/60 text-xs tracking-wide mt-0.5">Years of Expertise</div>
+                            <div className="text-white/60 text-xs tracking-wide mt-0.5">Years of Excellence</div>
                         </div>
                     </div>
                 </div>
 
                 {/* Stats Bar */}
                 <div ref={statsRef} className="mt-24 pt-12 border-t border-[#E5E7EB]">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
                         {stats.map((stat) => (
                             <StatItem key={stat.label} stat={stat} trigger={statsVisible} />
                         ))}

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-const missionWords = `At Zenora Wellness, our mission is to redefine what it means to thrive in the modern world of work — transforming executive health from an afterthought into a strategic advantage. We are committed to delivering evidence-based, deeply personalized wellness experiences that honor the complexity of the human body and the demands of corporate life.`.split(' ');
+const missionWords = `At Zenora Wellness, our mission is to transform executive health into a measurable performance advantage across global organizations. We deliver evidence-informed, deeply personalized wellness strategies that respect the complexity of modern leadership and the demands of corporate life — supporting executives and teams worldwide.`.split(' ');
 
 export default function MissionSection() {
     const sectionRef = useRef<HTMLElement>(null);
@@ -113,7 +113,7 @@ export default function MissionSection() {
                 >
                     Redefining executive wellness as a{' '}
                     <em style={{ color: '#C9A96E', fontStyle: 'italic' }}>strategic advantage</em>
-                    , not a benefit.
+                    {' '}— worldwide, not just a benefit.
                 </h2>
 
                 {/* Gold divider */}

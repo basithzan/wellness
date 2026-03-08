@@ -9,37 +9,37 @@ import { BookingProvider } from '@/components/BookingProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zenorawellness.com'),
-  title: 'Zenora Wellness FZE | Corporate Wellness UAE',
+  title: 'Zenora Wellness | Global Corporate Wellness',
   description:
-    'Zenora Wellness FZE — Premium executive wellness consultancy in the UAE. Evidence-based programs for health optimization, burnout recovery, and lifestyle disease prevention for corporate leaders.',
+    'Zenora Wellness — Premium global executive wellness consultancy. Evidence-based programs for health optimization, performance enhancement, and long-term vitality for corporate leaders worldwide.',
   keywords: [
-    'corporate wellness UAE',
-    'executive health programs Dubai',
-    'wellness consultancy UAE',
+    'global corporate wellness',
+    'executive health programs',
+    'wellness consultancy',
     'burnout recovery programs',
-    'metabolic reset UAE',
+    'executive performance optimization',
   ],
   openGraph: {
-    title: 'Zenora Wellness FZE | Corporate Wellness UAE',
+    title: 'Zenora Wellness | Global Corporate Wellness',
     description:
-      'Executive wellness solutions for the UAE\'s most driven professionals. Elevating corporate vitality through evidence-based health programs.',
+      'Executive wellness solutions for high-performing professionals across the globe. Elevating corporate vitality through evidence-based health programs.',
     url: 'https://zenorawellness.com',
-    siteName: 'Zenora Wellness FZE',
-    locale: 'en_AE',
+    siteName: 'Zenora Wellness',
+    locale: 'en_US',
     type: 'website',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Zenora Wellness FZE',
+        alt: 'Zenora Wellness',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zenora Wellness FZE | Corporate Wellness UAE',
-    description: 'Executive wellness solutions for the UAE\'s most driven professionals.',
+    title: 'Zenora Wellness | Global Corporate Wellness',
+    description: 'Executive wellness solutions for high-performing professionals across the globe.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Zenora Wellness FZE',
-  description: 'Premium corporate wellness consultancy in the UAE offering executive health optimization programs.',
+  name: 'Zenora Wellness',
+  description: 'Premium global executive wellness consultancy offering health optimization and performance programs worldwide.',
   url: 'https://zenorawellness.com',
   address: {
     '@type': 'PostalAddress',
@@ -60,8 +60,8 @@ const jsonLd = {
     addressRegion: 'UAE',
   },
   areaServed: {
-    '@type': 'Country',
-    name: 'United Arab Emirates',
+    '@type': 'Place',
+    name: 'Worldwide',
   },
   serviceType: 'Corporate Wellness Consultancy',
   priceRange: '$$$$',

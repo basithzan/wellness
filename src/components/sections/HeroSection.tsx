@@ -92,7 +92,7 @@ export default function HeroSection() {
             <div ref={imgRef} className="absolute inset-0 w-full h-[120%] -top-[10%]">
                 <Image
                     src="/hero-bg.jpg"
-                    alt="Premium corporate wellness environment with Dubai skyline"
+                    alt="Premium global executive wellness environment"
                     fill
                     priority
                     loading="eager"
@@ -126,7 +126,7 @@ export default function HeroSection() {
                         className="flex items-center gap-3 mb-8"
                     >
                         <span className="gold-divider" />
-                        <span className="section-label">UAE Corporate Wellness</span>
+                        <span className="section-label">Global Corporate Wellness</span>
                     </motion.div>
 
                     {/* Headline */}
@@ -141,7 +141,7 @@ export default function HeroSection() {
                             color: '#ffffff',
                         }}
                     >
-                        Elevating Corporate Vitality
+                        Elevating Corporate Vitality Worldwide
                     </h1>
 
                     {/* Subheadline */}
@@ -150,8 +150,8 @@ export default function HeroSection() {
                         className="text-white/70 text-base md:text-xl max-w-lg leading-relaxed mb-10"
                         style={{ fontFamily: 'DM Sans, system-ui, sans-serif', fontWeight: 300 }}
                     >
-                        Executive wellness solutions for the UAE&apos;s most driven professionals.
-                        Evidence-based programs that optimize health, enhance performance, and sustain vitality.
+                        Executive wellness solutions for high-performing professionals across the globe.
+                        Evidence-based programs designed to optimize health, enhance performance, and sustain long-term vitality.
                     </p>
 
                     {/* CTAs */}
@@ -187,9 +187,10 @@ export default function HeroSection() {
                 >
                     <div className="flex flex-wrap gap-8 md:gap-16">
                         {[
+                            { num: '10+', label: 'Years of Excellence' },
                             { num: '500+', label: 'Executives Served' },
                             { num: '50+', label: 'Corporate Partners' },
-                            { num: '98%', label: 'Client Satisfaction' },
+                            { num: '98%', label: 'Experience Excellence' },
                         ].map((stat) => (
                             <div key={stat.label} className="flex items-center gap-3">
                                 <div

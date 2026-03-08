@@ -15,49 +15,49 @@ import gsap from 'gsap';
 const services = [
     {
         icon: Activity,
-        title: 'Executive Health Optimization',
+        title: 'Executive Performance Optimization',
         description:
-            'Precision health protocols designed for high-performing executives. Comprehensive biomarker analysis, personalized nutrition, and performance strategies.',
+            'Advanced health insights combined with individualized performance strategies to support sustained energy, focus, and resilience.',
         tall: true,
         accent: '#C9A96E',
     },
     {
         icon: BarChart2,
-        title: 'Corporate Wellness Strategy',
+        title: 'Corporate Wellness Architecture',
         description:
-            'End-to-end wellness programs tailored to your organization\'s culture, goals, and scale. From audit to implementation.',
+            'End-to-end wellness frameworks built around organizational culture, leadership goals, and workforce wellbeing.',
         tall: false,
         accent: '#C9A96E',
     },
     {
         icon: Zap,
-        title: 'Metabolic Reset & Weight Management',
+        title: 'Metabolic & Body Composition Strategy',
         description:
-            'Science-backed metabolic assessments and structured reset programs. Sustainable weight management that fits a demanding lifestyle.',
+            'Structured lifestyle guidance focused on sustainable body balance, metabolic awareness, and long-term vitality.',
         tall: false,
         accent: '#C9A96E',
     },
     {
         icon: Moon,
-        title: 'Stress, Sleep & Burnout Recovery',
+        title: 'Stress Resilience & Recovery Systems',
         description:
-            'Evidence-based burnout recovery protocols addressing root causes. Sleep optimization, stress resilience, and cognitive recovery programs.',
+            'Integrated approaches to improve recovery quality, mental clarity, and emotional resilience in high-pressure environments.',
         tall: true,
         accent: '#C9A96E',
     },
     {
         icon: ShieldCheck,
-        title: 'Lifestyle Disease Prevention',
+        title: 'Proactive Health Risk Management',
         description:
-            'Proactive screening and prevention programs targeting UAE\'s most prevalent executive health risks — before they become crises.',
+            'Forward-looking health monitoring designed to identify potential risks early and support informed lifestyle decisions.',
         tall: false,
         accent: '#C9A96E',
     },
     {
         icon: Users,
-        title: 'Corporate Workshops & Leadership Health',
+        title: 'Leadership Health Engagement',
         description:
-            'Interactive sessions that align leadership teams around a culture of wellbeing. Practical tools for sustainable high performance.',
+            'Interactive executive sessions that align leadership teams around performance, wellbeing, and strategic health awareness.',
         tall: false,
         accent: '#C9A96E',
     },
@@ -137,10 +137,11 @@ export default function ServicesSection() {
                                 letterSpacing: '-0.01em',
                             }}
                         >
-                            Our <em style={{ fontStyle: 'italic', color: '#C9A96E' }}>Wellness</em> Services
+                            Our Global Executive{' '}
+                            <em style={{ fontStyle: 'italic', color: '#C9A96E' }}>Wellness</em> Services
                         </h2>
-                        <p className="text-[#6B7280] max-w-sm leading-relaxed text-sm lg:text-base">
-                            Comprehensive, evidence-based programs built for executives who refuse to compromise on health or performance.
+                        <p className="text-[#6B7280] max-w-md leading-relaxed text-sm lg:text-base">
+                            Curated wellness strategies for leaders who operate at the highest level. Our programs are personalized, data-driven, and designed for executives and organizations worldwide.
                         </p>
                     </div>
                 </div>

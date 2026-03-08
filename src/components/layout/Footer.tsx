@@ -43,7 +43,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-                            Elevating corporate vitality through evidence-based executive wellness programs. Rooted in the UAE, serving leaders worldwide.
+                            Elevating corporate vitality worldwide through evidence-based executive wellness programs. Serving leaders and organizations across the globe.
                         </p>
                         {/* Social */}
                         <div className="flex gap-4 mt-8">

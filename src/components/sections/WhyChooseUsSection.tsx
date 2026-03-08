@@ -2,20 +2,20 @@
 
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { FlaskConical, MapPin, Crown, Heart } from 'lucide-react';
+import { FlaskConical, Globe, Crown, Heart } from 'lucide-react';
 
 const differentiators = [
     {
         icon: FlaskConical,
-        title: 'Evidence-Based Approach',
+        title: 'Evidence-Informed Approach',
         description:
-            'Every program is grounded in peer-reviewed research, clinical validation, and measurable health outcomes — not trends or fads.',
+            'Every program is grounded in research, data insights, and measurable outcomes — designed around performance and long-term health.',
     },
     {
-        icon: MapPin,
-        title: 'UAE-Focused Expertise',
+        icon: Globe,
+        title: 'Global Executive Expertise',
         description:
-            'Purpose-built for the UAE\'s unique executive environment — understanding local culture, lifestyle pressures, and health risks specific to the region.',
+            'Built for leaders and organizations worldwide — understanding the demands of modern executive life across cultures, industries, and time zones.',
     },
     {
         icon: Crown,
@@ -97,7 +97,7 @@ export default function WhyChooseUsSection() {
                         The Zenora <em style={{ fontStyle: 'italic', color: '#C9A96E' }}>Difference</em>
                     </h2>
                     <p className="text-[#6B7280] max-w-xl mx-auto text-sm leading-relaxed">
-                        We combine clinical rigor with deep cultural understanding to deliver wellness programs that actually work for people like you.
+                        We combine scientific insight with strategic performance thinking to deliver wellness programs that create real impact for professionals and organizations globally.
                     </p>
                 </motion.div>
 
